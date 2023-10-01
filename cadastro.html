@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/style.css">
+
+    <link rel="icon" type="image/png" sizes="16x16"  href="./Fiveicons/favicon-16x16.png">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="theme-color" content="#ffffff">
+
+    <title>Tela de Cadastro</title>
+</head>
+
+<body>
+    <div class="main-login">
+        <div class="left-login">
+            <h1>One Bank <br> </h1>
+            <img src="./Animate/paid-idea-animate.svg" alt="imagem din" class="img-left-login">
+        </div>
+            <div class="right-login">
+                <div class="card-login">
+                    <h1>CRIAR CADASTRO</h1>
+                    <div class="text-field">
+                        <label for="Nome">Nome e Sobrenome</label>
+                        <input type="text" name="nome" placeholder="Nome e Sobrenome">
+                        <label for="Email">Email:</label>
+                        <input type="text" name="Email" placeholder="Email">
+                        <label for="CNPJ">CNPJ</label>
+                        <input type="text" name="cpf" placeholder="CNPJ">
+                        <label for="Senha">Senha</label>
+                        <input type="password" name="senha" placeholder="Senha">
+                        <label for="Confirme a Senha">Confirme a Senha</label>
+                        <input type="password" name="confirmaSenha" placeholder="Confirme a Senha">
+
+                    </div>                       
+                    <button type="submit" class="btn-cadastro" onclick="cadastrar();">Cadastre-se</button>
+                </div>
+            </div>
+        
+    </div>
+    <script src="./JS/cadastro.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Outfit', sans-serif;
+}
+html{
+    zoom: 100%;
+}
+body{
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow-y:hidden;
+}
+.limites{
+    background-color: #202020;
+    width: 775px;
+    height: 420px;
+    margin-left: 610px;
+    margin-top: -660px;
+    border-radius: 5px;
+
+}
+.saldo{
+    background-color: #202020;
+    width: 500px;
+    height: 420px;
+    margin-left: 97px;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.infos{
+    color: rgb(255, 255, 255);
+    margin-left: 20px;
+
+}
+.infos h2{
+    color: aquamarine;
+}
+.limitenav{
+    color: rgb(255, 255, 255);
+    margin-left: 20px;
+
+}
+
+.limitenav h2{
+    color: aquamarine;
+}
+
+.cartoes{
+    background-color: #202020;
+    width: 1286px;
+    height: 230px;
+    margin-top: 10px;
+    margin-left: 97px;
+    border-radius: 5px;
+}
+.cartoes p{
+    color: rgb(255, 255, 255);
+    margin-left: 230px;
+    margin-top: -90px;
+    position: relative;
+    
+}
+
+.pedir{
+    width: 150px;
+    height: 50px;
+    border-radius: 50px;
+    color: #000000;
+    background-color: #73deba;
+    font-weight: 600;
+    position: absolute;
+    right: 300px;
+    bottom: 87px;
+    cursor: pointer;
+}
+
+.pedir:hover{
+    width: 150px;
+    height: 50px;
+    border-radius: 50px;
+    color: #000000;
+    background-color: #73deba;
+    font-weight: 600;
+    position: absolute;
+    right: 300px;
+    bottom: 87px;
+    cursor: pointer;
+    outline: none;
+    box-shadow: 10px 10px 8px black;
+}
+
+.cartao-img{
+    width: 150px;
+    box-shadow: 10px 10px 8px black;
+    margin-left: 50px;
+    margin-top: 70px;
+}
+
+#frase{
+    margin-left: 830px;
+    color: aquamarine;
+    font-weight: 300;
+}
+
+nav.menu-lateral{
+    width: 80px;
+    height: 100%;
+    background-color: #202020;
+    padding: 40px 0 40px 1%;
+    box-shadow: 3px 0 0 #181818;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    transition: .5s;
+}
+
+nav.menu-lateral.expandir{
+    width: 300px;
+}
+
+.btn-expandir{
+    width: 100%;
+    padding-left: 10px;
+}
+
+.btn-expandir > i{
+    color: #00ffc8e2;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+ul{
+    height: 100%;
+    list-style-type: none;
+}
+
+ul li.item-menu{
+    transition: .2s;
+}
+
+ul li.ativo{
+    background-color: #333333;
+}
+
+ul li.item-menu:hover{
+    background: #333333;
+}
+
+ul li.item-menu a{
+    color: #00ffc8e2;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 20px 4%;
+    display: flex;
+    margin-bottom: 20px;
+    line-height: 40px;
+}
+
+ul li.item-menu a .txt-link{
+    margin-left: 70px;
+    transition: .5s;
+    opacity: 0;
+}
+
+nav.menu-lateral.expandir .txt-link{
+    margin-left: 40px;
+    opacity: 1;
+}
+
+ul li.item-menu a .icon > i{
+    font-size: 30px;
+    margin-left: 10px;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 30px;
+    border: 1px solid #181818;
+    border-radius: 10px;
+    margin-top: 80px;
+    background-color: #202020;
+    margin-left: 142px;
+  }
+
+  h2 {
+    color: aquamarine;
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+
+  label {
+    color: rgb(255, 255, 255);
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+
+  input[type="text"], select {
+    width: 100%;
+    padding: 10px;
+    border-radius: 3px;
+    border: 1px solid #181818;
+    box-sizing: border-box;
+    margin-bottom: 15px;
+  }
+
+  button {
+    background-color: aquamarine;
+    color: #202020;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 1000;
+  }
+
+  button:hover {
+    background-color: #00ffc8e2;
+  }
+  body{
+    background-color: #ffffff;
+  }
