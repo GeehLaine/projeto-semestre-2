@@ -52,6 +52,32 @@ body{
     color: aquamarine;
 }
 
+.links{
+    color: #73deba;
+    opacity: 60%;
+}
+
+.links:hover{
+    color: #73deba;
+    opacity: 100%;
+}
+
+#btn-rend{
+    color: aquamarine;
+    background-color: #202020;
+    border: none;
+    outline: none;
+    height: 20px;
+}
+
+#btn-rend:hover{
+    color: rgb(62, 62, 62);
+    background-color: #202020;
+    border: none;
+    outline: none;
+    height: 20px;
+}
+
 .cartoes{
     background-color: #202020;
     width: 1286px;
@@ -86,14 +112,14 @@ body{
     height: 50px;
     border-radius: 50px;
     color: #000000;
-    background-color: #73deba;
+    background-color: #46836f;
     font-weight: 600;
     position: absolute;
     right: 300px;
     bottom: 87px;
     cursor: pointer;
+    border: none;
     outline: none;
-    box-shadow: 10px 10px 8px black;
 }
 
 .cartao-img{
@@ -180,3 +206,5 @@ ul li.item-menu a .icon > i{
     font-size: 30px;
     margin-left: 10px;
 }
+
+  
