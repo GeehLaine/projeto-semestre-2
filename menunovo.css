@@ -1,0 +1,275 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Outfit', sans-serif;
+}
+
+body {
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow-y: hidden;
+}
+
+nav.menu-lateral {
+    width: 80px;
+    height: 100vh;
+    background-color: #202020;
+    box-shadow: 3px 0 0 #181818;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow-y: hidden;
+    transition: width 0.3s;
+    z-index: 2;
+    margin-right: 5px;
+}
+
+nav.menu-lateral.expandir {
+    width: 300px;
+}
+
+ul {
+    height: 100%;
+    list-style-type: none;
+}
+
+ul li.item-menu {
+    transition: .2s;
+}
+
+ul li.ativo:hover {
+    background-color: #333333;
+}
+
+ul li.item-menu:hover {
+    background: #333333;
+}
+
+ul li.item-menu a {
+    color: #00ffc8e2;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 20px 4%;
+    display: flex;
+    margin-bottom: 20px;
+    line-height: 40px;
+    justify-content: center;
+}
+
+ul li.item-menu a .icon>i {
+    font-size: 30px;
+    padding: 10px;
+}
+
+.pai {
+    display: flex;
+    margin-left: 85px;
+    margin-right: 1%;
+    padding: 20px 0px;
+}
+
+.imoveis,
+.equipamentos,
+.veiculos {
+    flex: 1;
+    margin: 1%;
+    background-color: #202020;
+    width: 500px;
+    height: 90vh;
+    border-radius: 5px;
+}
+.imoveis img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70px;
+}
+
+.imoveis h1 {
+    color: white;
+    text-align: center;
+}
+.imoveis h2 {
+    color: white;
+    text-align: center;
+}
+
+#btn-call{
+    width: 200px;
+    height: 40px;
+    margin-top: 30px;
+    margin-left: 120px;
+    background-color:#00ffc8e2 ;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+}
+
+#btn-call:hover{
+   background-color: #007d62e2;
+   color: white;
+}
+
+
+.imoveis p{
+    color: white;
+    text-align: center;
+    padding: 30px;
+}
+
+.icon-main {
+    color: #00ffc8e2;
+    margin-top: 2%;
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.equipamentos h1 {
+    color: white;
+    text-align: center;
+}
+
+.equipamentos img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70px;
+}
+
+.equipamentos h2 {
+    color: white;
+    text-align: center;
+}
+
+.equipamentos p{
+    color: white;
+    text-align: center;
+    padding: 30px;
+}
+
+#btn-email{
+    width: 200px;
+    height: 40px;
+    margin-top: 30px;
+    margin-left: 120px;
+    background-color:#00ffc8e2 ;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+}
+
+#btn-email:hover{
+    background-color: #007d62e2;
+    color: white;
+ }
+
+.veiculos h1 {
+    color: white;
+    text-align: center;
+}
+
+.veiculos img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70px;
+    margin-top: 10px;
+}
+
+.veiculos h2 {
+    color: white;
+    text-align: center;
+}
+
+.veiculos p{
+    color: white;
+    text-align: center;
+    padding: 30px;
+}
+
+#btn-ia{
+    width: 200px;
+    height: 40px;
+    margin-top: 20px;
+    margin-left: 120px;
+    background-color:#00ffc8e2 ;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+}
+
+#btn-ia:hover{
+    background-color: #007d62e2;
+    color: white;
+ }
+
+/* Adaptação para dispositivos menores */
+@media (max-width: 768px) {
+
+    nav.menu-lateral {
+        width: 100%;
+        height: 80px;
+        margin-bottom: 5px;
+    }
+
+    ul {
+        display: flex;
+        flex-direction: row;
+    }
+
+    ul li.item-menu {
+        width: 100%;
+        height: 100%;
+        margin-bottom: 10px; 
+    }
+
+    ul li.item-menu a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 10px;
+    }
+
+    .pai {
+        display: block;
+        margin-left: 1%;
+        margin-top: 85px;
+        padding: 0px 1%;
+        flex-direction: column;
+    }
+
+    .imoveis,
+    .equipamentos,
+    .veiculos {
+        flex: 1;
+        margin: 1% 0;
+        background-color: #333333;
+        width: 100%; 
+        height: auto; 
+        border-radius: 5px;
+        box-sizing: border-box;
+    }
+
+    .imoveis p,
+    .equipamentos p,
+    .veiculos p {
+        color: white;
+        text-align: center;
+        padding: 10px; 
+    }
+
+    #btn-call,
+    #btn-email,
+    #btn-ia {
+        width: 100%; 
+        height: 40px;
+        margin-top: 10px; 
+        margin-left: 0; 
+}
+}
